@@ -274,6 +274,7 @@ require('lazy').setup({
   -- Then, because we use the `config` key, the configuration only runs
   -- after the plugin has been loaded:
   --  config = function() ... end
+--  { 'nvim-java/nvim-java' },
   { 'nvim-tree/nvim-tree.lua' },
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
 
@@ -456,7 +457,7 @@ require('lazy').setup({
     },
   },
   { 'Bilal2453/luvit-meta', lazy = true },
-  {
+  --require('java').setup() {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -648,6 +649,7 @@ require('lazy').setup({
       require('mason').setup()
       require('nvim-tree').setup()
       require('toggleterm').setup()
+ --     require('lspconfig').jdtls.setup {}
 
       -- You can add other tools here that you want Mason to install
       -- for you, so that they are available from within Neovim.
