@@ -648,6 +648,7 @@ require('lazy').setup({
       require('mason').setup()
       require('nvim-tree').setup()
       require('toggleterm').setup()
+      require('lspconfig').pyright.setup {}
 
       -- You can add other tools here that you want Mason to install
       -- for you, so that they are available from within Neovim.
